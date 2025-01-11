@@ -3,16 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pixdevs.github.io/peakperks.in/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0",
     "vite": "^5.4.2"
   },
   "dependencies": {
