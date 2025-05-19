@@ -1,164 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Previous head section remains the same -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peak Perks Travel Company</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/src/styles/reset.css">
-  <link rel="stylesheet" href="/src/styles/variables.css">
-  <link rel="stylesheet" href="/src/styles/components/navbar.css">
-  <link rel="stylesheet" href="/src/styles/components/buttons.css">
-  <link rel="stylesheet" href="/src/styles/components/cards.css">
-  <link rel="stylesheet" href="/src/styles/components/footer.css">
-  <link rel="stylesheet" href="/src/styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Perks - Elevate Your Travel Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="navbar-container">
-        <a href="#" class="navbar-brand">
-          <!-- <i class="fas fa-crown"></i>  -->
-          Peak Perks
-        </a>
-        <div class="navbar-menu">
-          <a href="#home" class="navbar-link">Home</a>
-          <a href="#destinations" class="navbar-link">Destinations</a>
-          <a href="#about" class="navbar-link">About Us</a>
-          <a href="#contact" class="navbar-link">Contact</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero Section with Carousel -->
-  <section id="home" class="hero">
-    <div class="swiper hero-carousel">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image: url('https://res.cloudinary.com/dj3qdir59/image/upload/v1709652150/luxury-maldives-resort_wxcqvp.jpg')">
-          <div class="hero-content">
-            <h1>Discover Luxury Travel</h1>
-            <p>Experience the world's most exclusive destinations</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: url('https://res.cloudinary.com/dj3qdir59/image/upload/v1709652150/swiss-alps-mountain_ndhlxg.jpg')">
-          <div class="hero-content">
-            <h1>Unforgettable Adventures</h1>
-            <p>Create memories that last a lifetime</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: url('https://res.cloudinary.com/dj3qdir59/image/upload/v1709652150/dubai-luxury-hotel_kqwxjf.jpg')">
-          <div class="hero-content">
-            <h1>Ultimate Luxury</h1>
-            <p>Travel in unparalleled style and comfort</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
     </div>
-  </section>
 
-  <!-- About Us Section -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2 class="section-title">About Peak Perks</h2>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="https://res.cloudinary.com/dj3qdir59/image/upload/v1709652150/luxury-hotel-lobby_gxbquf.jpg" alt="Luxury Experience">
-        </div>
-        <div class="about-text">
-          <h3>Your Gateway to Extraordinary Journeys</h3>
-          <p>At Peak Perks, we believe that luxury travel is more than just reaching a destination – it's about creating unforgettable experiences that last a lifetime. With over a decade of expertise in crafting bespoke travel experiences, we pride ourselves on attention to detail and personalized service.</p>
-          <div class="about-features">
-            <div class="feature">
-              <i class="fas fa-concierge-bell"></i>
-              <h4>Premium Service</h4>
-              <p>24/7 concierge support for all your travel needs</p>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Peak<span>Perks</span></a>
             </div>
-            <div class="feature">
-              <i class="fas fa-map-marked-alt"></i>
-              <h4>Exclusive Destinations</h4>
-              <p>Access to the world's most luxurious locations</p>
+            <nav class="main-nav">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <h1>Discover the World with Peak Perks</h1>
+            <p>Elevate your travel experience to new heights</p>
+            <a href="destinations.html" class="btn btn-primary">Explore Destinations</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose Us</h2>
+                <p>Discover the Peak Perks difference</p>
             </div>
-            <div class="feature">
-              <i class="fas fa-star"></i>
-              <h4>Luxury Experience</h4>
-              <p>Five-star accommodations and services</p>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Personalized Itineraries</h3>
+                    <p>Curated travel experiences tailored to your preferences and desires.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Premium Service</h3>
+                    <p>Dedicated travel experts ensuring exceptional care throughout your journey.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Luxury Experiences</h3>
+                    <p>Access to exclusive destinations and premium accommodations worldwide.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Value for Money</h3>
+                    <p>Competitive pricing without compromising on quality and experiences.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer remains the same -->
-  <footer class="footer">
-    <!-- Footer content remains unchanged -->
-    <div class="footer-container">
-      <!-- Contact Information -->
-      <div class="footer-contact">
-        <h3>Contact Us</h3>
-        <div class="contact-info">
-          <p><i class="fas fa-map-marker-alt"></i> Peak Perks, Guindy, Chennai</p>
-          <p><i class="fas fa-phone"></i> +91 96776 80310</p>
-          <p><i class="fas fa-envelope"></i> info@peakperks.in</p>
+    <section class="destinations-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Popular Destinations</h2>
+                <p>Explore our most sought-after destinations</p>
+            </div>
+            <div class="destinations-slider">
+                <div class="destination-card fade-in">
+                    <div class="destination-img">
+                        <img src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Santorini, Greece">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Santorini, Greece</h3>
+                        <p>Experience the stunning white architecture and breathtaking views of the Aegean Sea.</p>
+                        <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Santorini%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                    </div>
+                </div>
+                <div class="destination-card fade-in">
+                    <div class="destination-img">
+                        <img src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bali, Indonesia">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Immerse yourself in the spiritual and natural beauty of this tropical paradise.</p>
+                        <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Bali%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                    </div>
+                </div>
+                <div class="destination-card fade-in">
+                    <div class="destination-img">
+                        <img src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Swiss Alps">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Swiss Alps</h3>
+                        <p>Discover the majestic mountains and charming villages of Switzerland.</p>
+                        <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Swiss%20Alps%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="destinations.html" class="btn btn-primary">View All Destinations</a>
+            </div>
         </div>
-        <div class="social-links">
-          <a href="https://facebook.com/peakperks.in" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/peakperks.in" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/PeakPerks" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/company/peak-perks/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
+    </section>
 
-      <!-- Branches Information -->
-      <div class="footer-branches">
-        <h3>Our Branches</h3>
-        <div class="branch">
-          <h4>Chennai</h4>
-          <p>Primus Building, Door no SP-7A</p>
-          <p>SIDCO Industrial Estate, Guindy</p>
-          <p>Chennai, TN 600032</p>
-          <!-- <p>+919677680310</p> -->
+    <section class="testimonials-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Our Clients Say</h2>
+                <p>Experiences shared by our travelers</p>
+            </div>
+            <div class="testimonial-card featured-testimonial fade-in">
+                <div class="testimonial-image">
+                    <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sarah Johnson">
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        <p>"Peak Perks transformed our honeymoon into an unforgettable experience. Their attention to detail and personalized service exceeded our expectations. Every moment was perfectly planned!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>Maldives Retreat, 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="testimonials.html" class="btn btn-primary">Read More Testimonials</a>
+            </div>
         </div>
-        <div class="branch">
-          <h4>Coimbatore</h4>
-          <p>Sri nagar, Barathi Nagar Extn, Ganapathy</p>
-          <p>Coimbatore, TN 641006</p>
-          <!-- <p>+919677680310</p> -->
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Elevate Your Travel Experience?</h2>
+                <p>Contact our team of travel experts today to start planning your dream vacation.</p>
+                <a href="contact.html" class="btn btn-white">Contact Us</a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Company Information -->
-      <div class="footer-company">
-        <h3>About Us</h3>
-        <ul class="company-links">
-          <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
-          <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
-          <li><a href="#"><i class="fas fa-chevron-right"></i> Cancellation Policy</a></li>
-          <li><a href="#"><i class="fas fa-chevron-right"></i> Refund Policy</a></li>
-        </ul>
-        <div class="gst-info">
-          <p><strong>GST No:</strong> 33AABCP1234A1Z5</p>
-          <p><strong>CIN:</strong> U63040TN2023PTC123456</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <a href="index.html">Peak<span>Perks</span></a>
+                    </div>
+                    <p>Your go-to destination for unforgettable travel experiences. Let us elevate your travel to new heights!</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> SP-7A, Primus Building, SIDCO Industrial Estate, Guindy, Chennai, Tamil Nadu 600032</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919677680310">+91 96776 80310</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@peakperks.in">info@peakperks.in</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:sales@peakperks.in">sales@peakperks.in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/peakperks.in/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/peakperks.in/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/peak-perks/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/919677680310" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Peak Perks. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </footer>
 
-    <div class="footer-bottom">
-      <p>&copy; 2024 Peak Perks | Website by PixDevs.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="/src/js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

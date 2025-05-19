@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Peak Perks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Peak<span>Perks</span></a>
+            </div>
+            <nav class="main-nav">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="destinations.html" class="active">Destinations</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Destinations</h1>
+            <p>Explore the world's most beautiful and exotic locations</p>
+        </div>
+    </section>
+
+    <section class="destination-filters">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Destinations</button>
+                <button class="filter-btn" data-filter="beach">Beach Getaways</button>
+                <button class="filter-btn" data-filter="city">City Escapes</button>
+                <button class="filter-btn" data-filter="mountain">Mountain Retreats</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations-grid">
+        <div class="container">
+            <div class="destinations-wrapper">
+                <!-- Beach Destinations -->
+                <div class="destination-item fade-in" data-category="beach">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maldives">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Maldives</h3>
+                            <p>Experience paradise on Earth with crystal clear waters and overwater bungalows.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-umbrella-beach"></i> Private Beach</span>
+                                <span><i class="fas fa-water"></i> Snorkeling</span>
+                                <span><i class="fas fa-spa"></i> Luxury Spa</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Maldives%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item fade-in" data-category="beach">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bali, Indonesia">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Bali, Indonesia</h3>
+                            <p>Immerse yourself in the spiritual and natural beauty of this tropical paradise.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-mountain"></i> Rice Terraces</span>
+                                <span><i class="fas fa-pray"></i> Temples</span>
+                                <span><i class="fas fa-cocktail"></i> Beach Clubs</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Bali%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item fade-in" data-category="beach">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Santorini, Greece">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Santorini, Greece</h3>
+                            <p>Experience the stunning white architecture and breathtaking views of the Aegean Sea.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-camera"></i> Scenic Views</span>
+                                <span><i class="fas fa-wine-glass-alt"></i> Vineyards</span>
+                                <span><i class="fas fa-utensils"></i> Cuisine</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Santorini%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- City Destinations -->
+                <div class="destination-item fade-in" data-category="city">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/32111008/pexels-photo-32111008/free-photo-of-eiffel-tower-and-seine-river-in-paris-daytime.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Paris, France">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Paris, France</h3>
+                            <p>Explore the city of love with its iconic landmarks and romantic atmosphere.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-landmark"></i> Eiffel Tower</span>
+                                <span><i class="fas fa-cheese"></i> Cuisine</span>
+                                <span><i class="fas fa-palette"></i> Art</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Paris%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item fade-in" data-category="city">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tokyo, Japan">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Tokyo, Japan</h3>
+                            <p>Discover the perfect blend of ancient traditions and modern technology.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-torii-gate"></i> Temples</span>
+                                <span><i class="fas fa-utensils"></i> Cuisine</span>
+                                <span><i class="fas fa-shopping-bag"></i> Shopping</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Tokyo%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item fade-in" data-category="city">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="New York, USA">
+                        </div>
+                        <div class="destination-content">
+                            <h3>New York, USA</h3>
+                            <p>Experience the energy of the city that never sleeps with its iconic skyline.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-city"></i> Skyscrapers</span>
+                                <span><i class="fas fa-theater-masks"></i> Broadway</span>
+                                <span><i class="fas fa-hamburger"></i> Food Scene</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20New%20York%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mountain Destinations -->
+                <div class="destination-item fade-in" data-category="mountain">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Swiss Alps">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Swiss Alps</h3>
+                            <p>Discover the majestic mountains and charming villages of Switzerland.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-skiing"></i> Skiing</span>
+                                <span><i class="fas fa-hiking"></i> Hiking</span>
+                                <span><i class="fas fa-mountain"></i> Views</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Swiss%20Alps%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item fade-in" data-category="mountain">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/2496880/pexels-photo-2496880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banff, Canada">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Banff, Canada</h3>
+                            <p>Experience the breathtaking beauty of the Canadian Rockies.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-mountain"></i> Rockies</span>
+                                <span><i class="fas fa-water"></i> Lakes</span>
+                                <span><i class="fas fa-skiing"></i> Winter Sports</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Banff%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure Destinations -->
+                <div class="destination-item fade-in" data-category="adventure">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/4553618/pexels-photo-4553618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Costa Rica">
+                        </div>
+                        <div class="destination-content">
+                            <h3>Costa Rica</h3>
+                            <p>Experience the perfect blend of adventure and natural beauty in this ecological paradise.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-tree"></i> Rainforests</span>
+                                <span><i class="fas fa-water"></i> Waterfalls</span>
+                                <span><i class="fas fa-hiking"></i> Zip-lining</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20Costa%20Rica%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item fade-in" data-category="adventure">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="https://images.pexels.com/photos/3329292/pexels-photo-3329292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="New Zealand">
+                        </div>
+                        <div class="destination-content">
+                            <h3>New Zealand</h3>
+                            <p>Discover the land of breathtaking landscapes and heart-pumping adventures.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-parachute-box"></i> Bungee</span>
+                                <span><i class="fas fa-skiing"></i> Skiing</span>
+                                <span><i class="fas fa-mountain"></i> Hiking</span>
+                            </div>
+                            <a href="https://wa.me/919677680310?text=I'm%20interested%20in%20the%20New%20Zealand%20destination%20package.%20Can%20you%20provide%20more%20details?" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-trip">
+        <div class="container">
+            <div class="custom-trip-content fade-in">
+                <h2>Looking for Something Specific?</h2>
+                <p>We specialize in creating custom travel experiences tailored to your preferences. Contact us for a personalized itinerary.</p>
+                <a href="contact.html" class="btn btn-primary">Request Custom Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <a href="index.html">Peak<span>Perks</span></a>
+                    </div>
+                    <p>Your go-to destination for unforgettable travel experiences. Let us elevate your travel to new heights!</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> SP-7A, Primus Building, SIDCO Industrial Estate, Guindy, Chennai, Tamil Nadu 600032</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919677680310">+91 96776 80310</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@peakperks.in">info@peakperks.in</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:sales@peakperks.in">sales@peakperks.in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/peakperks.in/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/peakperks.in/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/peak-perks/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/919677680310" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Peak Perks. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
